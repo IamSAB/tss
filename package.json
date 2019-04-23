@@ -1,0 +1,42 @@
+{
+    "name": "tss",
+    "displayName": "TSS Syntax Highlighting",
+    "description": "Transformation Style Sheets - Revolutionising PHP templating ",
+    "version": "0.0.1",
+    "publisher": "sab",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "tss",
+                "aliases": [
+                    "TSS",
+                    "tss"
+                ],
+                "extensions": [
+                    ".tss"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "tss",
+                "scopeName": "source.tss",
+                "path": "./syntaxes/tss.tmLanguage.json"
+            }
+        ]
+    },
+    "dependencies": {
+        "cson": "^5.1.0",
+        "language-tss": "github:solleer/language-tss"
+    },
+    "scripts": {
+        "compile": "cson2json ./node_modules/language-tss/grammars/tss.cson > ./syntaxes/tss.tmLanguage.json"
+    }
+}
