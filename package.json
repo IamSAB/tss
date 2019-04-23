@@ -2,7 +2,11 @@
     "name": "tss",
     "displayName": "TSS Syntax Highlighting",
     "description": "Transformation Style Sheets - Revolutionising PHP templating ",
-    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/IamSAB/tss"
+    },
+    "version": "0.0.2",
     "publisher": "sab",
     "engines": {
         "vscode": "^1.33.0"
